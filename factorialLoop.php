@@ -18,19 +18,19 @@ echo $factorial;
 
 
 $number = 5;
-$factorial = 1;
+//$fact = 1;
 
-for ($i = 2;$i <= $number;$i++){
-    $factorial = $factorial * $i;
+for ($i=$number-1; $i>1; $i--){
+    $number = $number * $i;
 
-    // 2   = 1 * 2
-    // 6   = 2 * 3
-    // 24  = 6 * 4
-    // 120 = 24 * 5
-
-    //echo $factorial."<br>"; 
+    // 20 = 5 * 4
+    // 60 = 20 * 3
+    // 120 = 60 * 2
+    
+    //echo $number ."*". $i."<br>";
+    //echo $number."<br>";   
 }
-echo $factorial;
+echo $number;
 
 
 ?>
