@@ -3,7 +3,7 @@
 $number = 5;
 $factorial = 1;
 
-for ($i = 2; $i <= $number; $i++){
+for ($i=2; $i<=$number; $i++){
     $factorial = $factorial * $i;
 
     // 2   = 1 * 2
@@ -34,21 +34,21 @@ echo $number;
 
 
 
-$fact = 1;
-$start = 3;
-$stop = 6;
+$fact=1;
+$start=3;
+$stop=6;
 
 $prog = $start;
 
-for ($a = $prog; $a < $stop; $a++) {
-    for ($i = $prog; $i > 1; $i--) {
-        $fact = $i * $fact;
+for ($a=$prog; $a<$stop; $a++) {
+    for ($i=$prog; $i>1; $i--) {
+        $fact=$i * $fact;
 
         //echo $i."<br>";
     }
 
-    echo $fact . "<br>";
-    $fact = 1;
+    echo $fact."<br>";
+    $fact=1;
     $prog++;
 }
 
