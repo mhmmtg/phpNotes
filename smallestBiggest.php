@@ -11,4 +11,14 @@ for ($i = 0; $i < count($numbers); $i++) {
 echo $biggest;
 
 
+$smallest = 99999999;
+for ($i = 0; $i < count($numbers); $i++) {
+    if ($numbers[$i] < $smallest) {
+        $smallest = $numbers[$i];
+    }
+    echo $smallest . "<br>";
+}
+echo $smallest;
+
+
 ?>
