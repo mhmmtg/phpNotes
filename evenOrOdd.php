@@ -7,7 +7,9 @@ while ($start < $stop) {
     $start++;
 
     if ($start % 2 == 0) {
-        echo $start . "<br>";
+        echo $start . " is even<br>";
+    } else {
+        echo $start . " is odd<br>";
     }
 }
 
