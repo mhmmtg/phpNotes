@@ -21,4 +21,15 @@ for ($i = 0; $i < count($numbers); $i++) {
 echo $smallest;
 
 
+//smallest v2
+$smallest = $numbers[0];
+for ($i = 0; $i < count($numbers); $i++) {
+    if ($numbers[$i] < $smallest) {
+        $smallest = $numbers[$i];
+    }
+    echo $smallest . "<br>";
+}
+echo $smallest;
+
+
 ?>
