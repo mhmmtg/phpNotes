@@ -1,5 +1,16 @@
 <?php
 
+$start = 2;
+$stop = 10;
+
+$sum = 0;
+for ($i = $start; $i < $stop; $i++) {
+    $sum = $sum + $i;
+    //echo $sum."<br>";
+}
+echo $sum . "<br>";
+
+
 $number = 5;
 $factorial = 1;
 
