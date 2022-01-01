@@ -1,5 +1,7 @@
 <?php
 
+
+//sum
 $start = 2;
 $stop = 10;
 
@@ -11,6 +13,21 @@ for ($i = $start; $i < $stop; $i++) {
 echo $sum . "<br>";
 
 
+
+//square
+$start = 2;
+$stop = 10;
+
+$sqr = 1;
+for ($i = $start; $i < $stop; $i++) {
+    $sqr = $i * $i;
+
+    echo $sqr . "<br>";
+}
+
+
+
+//factorial
 $number = 5;
 $factorial = 1;
 
@@ -28,6 +45,7 @@ echo $factorial;
 
 
 
+//factorial2
 $number = 5;
 //$fact = 1;
 
@@ -45,6 +63,7 @@ echo $number;
 
 
 
+//factorial3
 $fact=1;
 $start=3;
 $stop=6;
