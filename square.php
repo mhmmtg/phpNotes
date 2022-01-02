@@ -10,8 +10,9 @@ for ($i = 1; $sqrRoot < $number; $i++) {
 
 if ($sqrRoot == $number) {
     echo $sqrRoot / ($i - 1);
-} else {
-    echo "not a tamkare";
+} 
+else {
+    echo "not a square";
 }
 
 
