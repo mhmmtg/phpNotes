@@ -1,13 +1,45 @@
-<?php $a = "test"; ?>
-<?=$a; ?>
-
-//===
-
-In PHP, keywords (e.g. if, else, while, echo, etc.), classes, functions, and user-defined functions are not case-sensitive.
-However; all variable names are case-sensitive!
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Sample Form</title>
+</head>
+<body>
 
 <?php
-$txt = "W3Schools.com";
-echo "I love $txt!"; //php in double quote
+$formTitle = $firstParagraph = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+    $formTitle = inputCheckher($_POST['formtitle']);
+    $firstParagraph = inputCheckher($_POST['firstparag']);
+}
+
+//if(empty($formTitle)){}
+function inputCheckher($input)
+{
+    $input = trim($input);
+    $input = stripslashes($input);
+    $input = htmlspecialchars($input);
+    return $input;
+}
+
 ?>
-In PHP 7, type declarations were added.
+
+<h1>Php Sample Form</h1>
+
+<form action="<?php echo inputCheckher($_SERVER["PHP_SELF"]) ?>" method="post">
+    <label for="formtitle">Form Title:</label><br>
+    <input type="text" name="formtitle" placeholder="enter form title"><br><br>
+
+    <label for="firstparag">First name:</label><br>
+    <input type="text" name="firstparag" placeholder="enter some text"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<h1>Your Input</h1>
+    <h2>Form Title: <?=$formTitle ?></h2>
+    <h3>First Paragraph: <?=$firstParagraph ?></h3>
+
+</body>
+</html>
