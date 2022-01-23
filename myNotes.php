@@ -27,7 +27,7 @@ function inputCheckher($input)
 
 <h1>Php Sample Form</h1>
 
-<form action="<?php echo inputCheckher($_SERVER["PHP_SELF"]) ?>" method="post">
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
     <label for="formtitle">Form Title:</label><br>
     <input type="text" name="formtitle" placeholder="enter form title"><br><br>
 
