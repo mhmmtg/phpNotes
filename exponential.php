@@ -1,15 +1,15 @@
 <?php
 
-$numbers = 2;
-$exponential = 5;
+$base = 2;
+$power = 5;
 
-$res = 1;
+$result = 1;
 
-for ($i = 0; $i < $exponential; $i++) {
-    $res = $numbers * $res;
+for ($i = 0; $i < $power; $i++) {
+    $result = $base * $result;
 
-    echo $res . "<br>";
+    //echo $result . "<br>";
 }
-//echo $res;
+echo $result;
 
 ?>
